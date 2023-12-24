@@ -4,6 +4,8 @@
 
 이번 PDF 요약은 맵-리듀스방법과 load_summarize_chain방법의 결과 차이를 알아보기 위해 두 방법 모두 진행했습니다.
 맵-리듀스방법은 LLM 체인을 각 문서에 개별적으로 적용하고(맵 단계) 체인 출력을 새 문서로 처리합니다. 그런 다음 모든 새 문서를 별도의 결합 문서 체인에 전달하여 단일 출력을 얻습니다(축소 단계).
+아래는 맵-리듀스에 대해 참고한 사이트 주소입니다
+https://python.langchain.com/docs/modules/chains/document/map_reduce
 
 사용한 모델은 "mistralai/Mistral-7B-Instruct-v0.1" 아래 허깅페이스 사이트에 올라온 모델을 이용했습니다.(한국어도 가능)
 https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1
